@@ -1,0 +1,75 @@
+html{
+	position: relative;
+}
+body{
+	margin-top: 30px;
+	margin-bottom: 120px;
+}
+
+.jumbotron{
+	min-height: 600px;
+}
+
+.jumbotron img{
+	width: 200px;
+	border: 5px solid #666;
+
+}
+hr{
+	width: 250px;
+	border-top: 2px solid black;
+}
+
+section{
+	min-height: 600px;
+}
+
+.portfolio{
+	background-color: #ccc;
+}
+.contact{
+	min-height: 800px;
+}
+footer{
+
+	position: absolute;
+	width: 100%;
+	height: 120px;
+	bottom: 0;
+	background-color: #333;
+}
+footer p {
+
+	color: white;
+	padding-top: 30px;
+}
+
+.overlay{
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0);
+	z-index: 9999;
+	transition: 1s;
+}
+
+.overlay:target{
+
+	width: auto;
+	height: auto;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.7);
+}
+
+.overlay p{
+
+	object-position: center;
+	padding-top: 150px;
+	padding-right: 30px;
+	padding-left: 30px;
+	color: white;
+}
